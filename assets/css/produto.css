@@ -1,0 +1,158 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#produto-div {
+	width: 75%;
+}
+
+div#produto-div hr {
+	background-color: #a7a7a7;
+}
+
+div#produto-div div.images div.each-div {
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+div#produto-div div.images img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+div#produto-div div.images div#image-three::after {
+	content: "3D";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 2rem;
+	background-color: rgba(29, 29, 29, .3);
+	color: #fff;
+	pointer-events: none;
+}
+
+div#produto-div div#info-div {
+	padding-left: 50px;
+}
+
+div#produto-div div#info-div span#title-span {
+	color: #a11414;
+}
+
+div#produto-div div#info-div div#rate div#stars {
+	position: relative;
+}
+
+div#produto-div div#info-div div#rate div#stars::after {
+	content: "(10 classificações)";
+	position: absolute;
+	top: 50%;
+	margin-left: 15px;
+	transform: translateY(-50%);
+	color: #a7a7a7;
+}
+
+div#produto-div div#info-div div#rate svg {
+	width: 15px;
+	fill: #a11414;
+}
+
+div#produto-div div#info-div div#rate svg:last-child {
+	fill: #ccc;
+}
+
+div#produto-div div#info-div div#rate span {
+	color: #a7a7a7;
+}
+
+div#produto-div div#options form div.each-option {
+	position: relative;
+}
+
+div#produto-div div#options form label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+
+div#produto-div div#options form input {
+	padding-left: 100px;
+	border: none;
+	font-weight: bold;
+}
+
+div#produto-div div#options form input:disabled {
+	background-color: transparent;
+}
+
+div#produto-div div#options form input:last-child {
+	color: #a11414;
+}
+
+div#produto-div div#price h3 {
+	font-weight: bold;
+	color: #a11414;
+}
+
+div#produto-div div#price form label {
+	display: none;
+}
+
+div#produto-div div#price form input {
+	border-radius: 25px;
+	transition: .2s ease;
+}
+
+div#produto-div div#buttons {
+	height: 0px;
+	overflow: hidden;
+	transition: .5s ease;
+}
+
+div#produto-div div.buttons-show {
+	height: 300px !important;
+}
+
+div#produto-div div#buttons span {
+	padding: 5px 0px;
+	font-weight: bold;
+}
+
+div#produto-div div#buttons button {
+	width: 200px;
+	margin: 5px 5px;
+	padding: 5px 0px;
+	border: 1px solid #a11414;
+	border-radius: 25px;
+	transition: .2s ease;
+}
+
+canvas#meuCanvas {
+	display: none;
+}
+
+/* ------------ ON HOVER ------------ */
+
+div#produto-div div#price form input:hover {
+	background-color: #1d1d1d;
+	color: #fff;
+}
+
+div#produto-div div#buttons button:hover {
+	background-color: #a11414;
+	color: #fff;
+}
+
+/* ------------ ON FOCUS ------------ */
+
+div#produto-div div#buttons button:focus {
+	outline: none;
+	box-shadow: none;
+}

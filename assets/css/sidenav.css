@@ -1,0 +1,72 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div.sidenav {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 10vh;
+  overflow-x: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+div.sidenav a.side-nav-anc {
+  margin-left: -250px;
+  padding: 15px 8px 15px 20%;
+  display: block;
+  overflow-x: hidden;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+  color: #a11414;
+  transition: .5s;
+}
+
+div.sidenav a.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+div.sidenav ul#side-nav-redes {
+  position: absolute;
+  width: 50%;
+  bottom: 10vh;
+  left: -50%;
+  transform: translateX(-50%);
+  display: flex;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  transition: .5s ease-in-out;
+}
+
+div.sidenav ul#side-nav-redes a {
+  color: #a11414;
+  font-family: Arial, FontAwesome;
+}
+
+div.sidenav ul#side-nav-redes a i {
+  font-style: normal;
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+div.sidenav a.side-nav-anc:not(:first-child):hover {
+  color: #5e0c0c;
+  transform: translateX(10px);
+}
+
+div.sidenav a.side-nav-anc:not(:first-child):hover::before {
+  opacity: 1;
+}
+

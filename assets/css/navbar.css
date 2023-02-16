@@ -1,0 +1,361 @@
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: transparent;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: transparent;
+  }
+
+
+/* ------------ TAGS NORMAIS ------------ */
+
+div.opacity {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 2;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, .6);
+	transition: opacity .5s;
+}
+
+nav#nav {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	z-index: 1;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 10vh;
+	grid-template-areas: "nav-logo nav-list nav-menu";
+	color: #4d4d4d;
+}
+
+nav#nav ul {
+	display: flex;
+}
+
+nav#nav div.nav-item {
+	position: relative;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav#nav div#nav-logo {
+	position: relative;
+	grid-area: nav-logo;
+}
+
+nav#nav div#nav-logo a {
+	text-decoration: none;
+}
+
+nav#nav div#nav-logo a span {
+	position: relative;
+	color: #1d1d1d;
+	font-size: 1.75rem;
+}
+
+nav#nav div#nav-logo a span::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -5px;
+	width: 0px;
+	height: 2px;
+	background-color: #a11414;
+	transition: .2s ease;
+}
+
+nav#nav div#nav-logo a span::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -25px;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgba(228, 117, 54, 0.13);
+	pointer-events: none;
+}
+
+
+nav#nav div#nav-list {
+	grid-area: nav-list;
+}
+
+nav#nav div#nav-menu {
+	grid-area: nav-menu;
+}
+
+nav#nav div#nav-logo img {
+	height: 25px;
+	margin-top: 1%;
+	cursor: pointer;
+	transition: .3s;
+}
+
+nav#nav div#nav-menu ul li button#dropdownMenuButton {
+	font-size: 1.2rem;
+	color: #1d1d1d;
+}
+
+nav#nav div#nav-menu ul li button#dropdownMenuButton i {
+	transition: transform .3s;
+}
+
+nav#nav div#nav-menu ul li button#dropdownMenuButton i.icon-transform {
+	transform: rotate(180deg);
+}
+
+nav#nav div#nav-menu ul li button#dropdownMenuButton::after {
+	display: none !important;
+}
+
+div#nav-list ul, div#nav-menu ul {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+div#nav-menu ul li svg path, div#nav-menu ul li {
+	margin: 0px 5%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 1.2rem;
+	fill: #1d1d1d;
+	color: #1d1d1d;
+	transition: font-size .3s;
+}
+
+div#nav-list ul li {
+	border: 2px solid transparent;
+	border-radius: 5px;
+}
+
+div#nav-list ul li a {
+	padding: 30px 10px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #1d1d1d;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease;
+}
+
+div#nav-list ul li a.active {
+	border-bottom: 2px solid #802020;
+}
+
+nav#nav div.side-menu {
+	display: none;
+	grid-area: side-menu;
+}
+
+nav#nav svg#icon-menu {
+	width: 25px;
+	cursor: pointer;
+}
+
+nav#nav div#nav-menu div#menu-drop {
+	width: 300px;
+	padding: 30px 15px;
+	cursor: context-menu;
+}
+
+nav#nav div#nav-menu div.show {
+	top: inherit !important;
+}
+
+nav#nav div#nav-menu div#social {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2 1fr);
+	grid-template-areas: 
+	"div-redes"
+	"div-lang";
+}
+
+nav#nav div#nav-menu div#links a {
+	color: #802020;
+}
+
+nav#nav div#nav-menu div#social div#redes {
+	grid-area: div-redes;
+}
+
+nav#nav div#nav-menu div#social div#lang {
+	grid-area: div-lang;
+}
+
+nav#nav div#nav-menu div#social div#redes,
+nav#nav div#nav-menu div#social div#lang {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: Arial, FontAwesome;
+}
+
+nav#nav div#nav-menu div#social div#redes i,
+nav#nav div#nav-menu div#social div#lang i {
+	font-style: normal;
+	font-weight: lighter;
+	cursor: pointer;
+	color: #802020;
+}
+
+nav#nav div#nav-menu div#social div#lang p {
+	margin-top: auto;
+	cursor: pointer;
+	color: #802020;
+}
+
+nav#nav div#hidden-search {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+}
+
+nav#nav div.mostrarBarra {
+	display: flex !important;
+}
+
+nav#nav div.relative-search {
+	position: relative;
+	flex-grow: 1;
+}
+
+nav#nav div.relative-search input {
+	width: 100%;
+	padding: 0px 40px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+nav#nav div.relative-search svg#searchIconHidden {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+}
+
+nav#nav div.relative-search span#closeIconHidden {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+
+/* ------------ ON HOVER ------------ */
+
+nav#nav div#nav-logo a span:hover::after {
+	width: 100%;
+}
+
+div#nav-list ul li a:hover {
+	text-decoration: none;
+	border-bottom: 2px solid #a11414;
+}
+
+nav#nav div#nav-menu div#links a:hover,
+nav#nav div#nav-menu div#social div#lang p:hover,
+nav#nav div#nav-menu div#social div#redes i:hover,
+nav#nav div#nav-menu div#social div#lang i:hover {
+	color: black;
+}
+
+
+/* ------------ ON FOCUS ------------ */
+
+nav#nav div.relative-search input:focus {
+	box-shadow: none;
+}
+
+nav#nav div#nav-menu ul li button#dropdownMenuButton:focus {
+	box-shadow: none;
+}
+
+
+/* ------------ MEDIA REPSONSIVE ------------ */
+
+@media (max-width: 1200px) {		/* MEDIA MAX WIDTH 1200PX */
+	div#nav-menu ul li svg path, div#nav-menu ul li {
+		font-size: 1rem;
+	}
+
+	div#nav-list ul li a {
+		font-size: 1rem;
+	}
+
+	nav#nav div#nav-logo img {
+		width: 130px;
+	}
+}
+
+@media (max-width: 992px) {			/* MEDIA MAX WIDTH 992PX */
+	nav#nav {
+		position: relative;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 7vh;
+		grid-template-areas: "side-menu nav-logo nav-menu";
+	}
+
+	nav#nav div#nav-menu ul li button#dropdownMenuButton {
+		display: none;
+	}
+
+	nav#nav div#nav-list ul {
+		display: none;
+	}
+
+	nav#nav li#dropdown-menu {
+		display: none;
+	}
+
+	nav#nav div.side-menu {
+		display: initial;
+	}
+
+	nav#nav div#nav-logo img {
+		width: 200px;
+		margin-top: 0;
+	}
+
+	svg {
+		vertical-align: initial;
+	}
+}
+
+@media (max-width: 425px) {			/* MEDIA MAX WIDTH 425PX */
+	nav#nav div#nav-logo img {
+		width: 150px;
+		margin-top: 0;
+	}
+}

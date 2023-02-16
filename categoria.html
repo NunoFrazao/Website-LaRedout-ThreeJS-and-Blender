@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="La Redoute">
+	<meta name="author" content="João Onofre, Nuno Frazão">
+	<title>LaRedoute | Categorias</title>
+
+	<!-- CDNS & DOCS -->
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+	<!-- LINKS-->
+	<link href="assets/css/body.css" rel="stylesheet">
+	<link href="assets/css/navbar.css" rel="stylesheet">
+	<link href="assets/css/sidenav.css" rel="stylesheet">
+	<link href="assets/css/footer.css" rel="stylesheet">
+	<link href="assets/css/categoria.css" rel="stylesheet">
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Screen readers only -->
+	<h1 class="sr-only">La Redoute</h1>
+
+	<!-- ======================= NAVBAR ======================= -->
+	<div class="opacity"></div>
+
+	<!-- SIDE NAVBAR -->
+	<div id="mySidenav" class="sidenav">
+		<a id="close-sidenav" class="closebtn side-nav-anc" href="javascript:void(0)">&times;</a>
+		<a class="side-nav-anc" href="produtos.html">Casa</a>
+		<a class="side-nav-anc" href="#">Moda</a>
+		<a class="side-nav-anc" href="#">Outlet</a>
+		<a class="side-nav-anc" href="#">Sustentabilidade</a>
+		<a class="side-nav-anc" href="contactos.html">Contactos</a>
+
+		<ul id="side-nav-redes" class="list-unstyled">
+			<a href="https://www.facebook.com/LaRedoutePT/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.instagram.com/laredoutept/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/user/RedoutechannelPT" target="_blank"><i class="fab fa-youtube"></i></a>
+		</ul>
+	</div>
+
+	<!-- MAIN NAVBAR -->
+	<nav id="nav">
+
+		<!-- ICON SIDE MENU -->
+		<div class="nav-item side-menu">
+			<svg width="231" height="84" viewBox="0 0 231 84" id="icon-menu">
+				<g>
+					<path fill="rgb(29,29,29)" fill-rule="evenodd" d="M5 0h221c2.75957512 0 5 2.24042488 5 5v8c0 2.75957512-2.24042488 5-5 5H5c-2.75957512 0-5-2.24042488-5-5V5c0-2.75957512 2.24042488-5 5-5z"/>
+					<path fill="rgb(29,29,29)" fill-rule="evenodd" d="M5 66h106c2.75957512 0 5 2.24042488 5 5v8c0 2.75957512-2.24042488 5-5 5H5c-2.75957512 0-5-2.24042488-5-5v-8c0-2.75957512 2.24042488-5 5-5z"/>
+				</g>
+			</svg>
+		</div>
+
+		<!-- LOGOTIPO -->
+		<div class="nav-item" id="nav-logo">
+			<a href="index.html"><span>LaRedoute</span></a>
+		</div>
+
+		<!-- LISTA UL -->
+		<div class="nav-item" id="nav-list">
+			<ul class="list-unstyled" id="anc-list">
+
+				<li><a href="produtos.html" class="ul-anc">Casa</a></li>
+				<li><a href="#" class="ul-anc">Moda</a></li>
+				<li><a href="#" class="ul-anc">Outlet</a></li>
+				<li><a href="#" class="ul-anc">Sustentabilidade</a></li>
+				<li><a href="contactos.html" class="ul-anc">Contactos</a></li>
+			</ul>
+
+			<!-- HIDDEN SEARCH BAR -->
+			<div id="hidden-search">
+				<div class="relative-search">
+					<form action="">
+						<!-- HIDDEN SVG SEARCH -->
+						<svg id="searchIconHidden" class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+							<path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+							<path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+						</svg>
+
+						<input class="form-control" type="text" placeholder="Pesquisa La Redoute">
+
+						<span id="closeIconHidden"><i class="fal fa-times"></i></span>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- MENU -->
+		<div class="nav-item" id="nav-menu">
+			<ul class="list-unstyled">
+				<li>
+					<!-- SVG SEARCH -->
+					<div id="divSearchIcon">
+						<svg id="searchIcon" class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+							<path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+							<path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+						</svg>
+					</div>
+				</li>
+
+				<!-- DROPDOWN -->
+				<li>
+					<div class="dropdown">
+						<button id="dropdownMenuButton" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+						<div id="menu-drop" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+							<div class="row">
+								<!-- LINKS -->
+								<div id="links" class="col-6 border-right">
+									<a class="dropdown-item" href="?#">Perfil</a>
+									<a class="dropdown-item" href="#">Logout</a>						
+								</div>
+
+								<!-- SOCIAL & LANG -->
+								<div id="social" class="col-6">
+									<!-- REDES SOCIAIS -->
+									<div id="redes">
+										<a href="https://www.facebook.com/LaRedoutePT/" target="_blank">
+											<i class="fab fa-facebook-square"></i>
+										</a>
+										<a href="https://www.instagram.com/laredoutept/" target="_blank">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<a href="https://www.youtube.com/user/RedoutechannelPT" target="_blank">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</div>
+
+									<!-- LINGUA -->
+									<div id="lang">
+										<p>Português <i class="fal fa-chevron-down"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ======================= MAIN ======================= -->
+	<main>
+		<div id="categoria-div" class="container-fluid mt-5">
+			<!-- Categories -->
+			<div id="categories" class="row">
+				<div class="col-md-6">
+					<!-- Casa -->
+					<div id="div-casa" class="images">
+						<span>Casa</span>
+						<a href="produtos.html"></a>
+					</div>
+				</div>
+				<!-- Outlet -->
+				<div class="col-md-3">
+					<div id="div-outlet" class="images">
+						<span>Outlet</span>
+					</div>
+				</div>
+				<!-- Moda -->
+				<div class="col-md-3">
+					<div id="div-moda" class="images">
+						<span>Moda</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- News -->
+			<div id="news" class="row">
+				<!-- Title -->
+				<h2 class="my-5"><strong><span id="title-span">Novidades <span id="title-in-span"></span></strong></span></h2>
+
+				<!-- Products -->
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/1.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Mesa cabeceira</p>
+					<span><strong>199€</strong></span>
+				</div>
+
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/3.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Vaso para planta</p>
+					<span><strong>49€</strong></span>
+				</div>
+
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/18.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Estante de parede</p>
+					<span><strong>39€</strong></span>
+				</div>
+
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/15.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Sofá cama em poliéster</p>
+					<span><strong>449€</strong></span>
+				</div>
+
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/12.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Mesa de centro em nogueira</p>
+					<span><strong>199€</strong></span>
+				</div>
+
+				<div class="col-sm-6 col-md-3 col-lg-2 each-product mt-1 mb-3 p-0">
+					<div class="each-div">
+						<a href="#">
+							<img src="assets/img/produtos/19.png" alt="Image <?= $i ?>" width="100">
+						</a>
+					</div>
+					<p class="m-0 titles text-center">Sofá rústico amarelo</p>
+					<span><strong>699€</strong></span>
+				</div>
+
+				
+			</div>
+		</div>
+	</main>
+
+	<!-- ======================= FOOTER ======================= -->
+	<footer>
+		<img src="assets/img/footer.png" alt="footer" id="footer-img">
+	</footer>
+
+	<!-- CDNS & DOCS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- SCRIPTS -->
+	<script src="assets/js/body.js"></script>
+	<script src="assets/js/sidenav.js"></script>
+	<script src="assets/js/searchNavbar.js"></script>
+</body>
+</html>

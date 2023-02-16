@@ -1,0 +1,140 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#categoria-div {
+	width: 75%;
+}
+
+div#categoria-div div.images {
+	position: relative;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+div#categoria-div div.images::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .28);
+}
+
+div#categoria-div div.images::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 100px;
+	transform: translate(-50%, -50%);
+	border: 4px solid transparent;
+	border-radius: 5px;
+	z-index: 1;
+	transition: .2s ease;
+}
+
+div#categoria-div div#div-casa {
+	background-image: url("../img/casa.png");
+}
+
+div#categoria-div div#div-outlet {
+	background-image: url("../img/outlet.png");
+}
+
+div#categoria-div div#div-moda {
+	background-image: url("../img/moda.png");
+}
+
+div#categoria-div div#div-casa a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+div#categoria-div div.images span {
+	z-index: 1;
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+div#categoria-div h2 {
+	pointer-events: none;
+}
+
+div#categoria-div h2 span#title-span {
+	position: relative;
+}
+
+div#categoria-div h2 span#title-span::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: calc(100% - 55px);
+	height: 2px;
+	border-radius: 5px;
+	background-color: #a11414;
+}
+
+div#categoria-div h2 span#title-in-span {
+	position: relative;
+	color: #a11414;
+}
+
+div#categoria-div h2 span#title-in-span::after {
+	content: "DESCUBRA";
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+	width: 50px;
+	font-size: 0.6rem;
+}
+
+div#categoria-div div.each-product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+}
+
+div#categoria-div div.each-product p.titles {
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	width: 160px;
+	white-space: nowrap;
+}
+
+div#categoria-div div.each-div {
+	width: 96%;
+	height: 98%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .2s ease;
+}
+
+div#categoria-div div.each-div img {
+	pointer-events: none;
+}
+
+/* ------------ ON HOVER ------------ */
+
+div#categoria-div div.images:hover::before {
+	border-color: #fff;
+}

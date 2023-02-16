@@ -1,0 +1,103 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#contactos-div {
+	width: 75%;
+}
+
+div#contactos-div h2 {
+	pointer-events: none;
+}
+
+div#contactos-div h2 span#title-span {
+	position: relative;
+}
+
+div#contactos-div h2 span#title-span::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: calc(100% - 65px);
+	height: 2px;
+	border-radius: 5px;
+	background-color: #a11414;
+}
+
+div#contactos-div h2 span#title-in-span {
+	position: relative;
+	color: #a11414;
+}
+
+div#contactos-div h2 span#title-in-span::after {
+	content: "FORMULÁRIO";
+	position: absolute;
+	right: -40px;
+	bottom: -10px;
+	width: 100px;
+	font-size: 0.6rem;
+}
+
+div#contactos-div form {
+	margin-bottom: 150px;
+}
+
+div#contactos-div form div.form-inps,
+div#contactos-div form div#form-inp-msg {
+	position: relative;
+}
+
+div#contactos-div form div.form-inps label {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	transform: translateY(-50%);
+	font-weight: bold;
+	color: #a11414;
+}
+
+div#contactos-div form input {
+	border-radius: 5px;
+}
+
+div#contactos-div form div.form-inps input {
+	padding-left: 100px;
+}
+
+div#contactos-div form div#form-inp-msg label {
+	position: absolute;
+	top: 7px;
+	left: 25px;
+	font-weight: bold;
+	color: #a11414;
+}
+
+div#contactos-div form div#form-inp-msg input {
+	padding-top: 40px;
+}
+
+div#contactos-div form p {
+	color: #afafaf;
+}
+
+div#contactos-div form button#btn-send {
+	padding: 5px 100px;
+	border-radius: 25px;
+	border-color: #a11414;
+	color: #a11414;
+	transition: .2s ease;
+}
+
+/* ------------ ON HOVER ------------ */
+
+div#contactos-div form button#btn-send:hover {
+	background-color: #a11414;
+	color: #fff;
+}
+
+/* ------------ ON FOCUS ------------ */
+
+div#contactos-div form input:focus {
+	outline: none;
+	border-color: #a11414;
+	box-shadow: 0 0 0 0.25rem rgba(161, 20, 20, .2);
+}

@@ -1,0 +1,89 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#home-div {
+	width: 75%;
+}
+
+div#home-div div.home-main-divs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div#home-div div.home-main-divs h2 {
+	width: 80%;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+div#home-div div.home-main-divs h2 span {
+	align-items: flex-start;
+	color: #a11414;
+}
+
+div#home-div div.home-main-divs div#home-buttons a {
+	display:inline-block;
+	width: 150px;
+	padding: 5px 20px;
+	border-radius: 25px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+}
+
+div#home-div div.home-main-divs div#home-buttons a:first-child {
+	background-color: #a11414;
+}
+
+div#home-div div.home-main-divs div#home-buttons a:last-child {
+	margin-left: 15px;
+	background-color: #e47536;
+}
+
+div#home-div div.home-main-divs hr#info-hr {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: -40%;
+}
+
+div#home-div div.home-main-divs div#info-discount {
+	width: 360px;
+}
+
+div#home-div div.home-main-divs div.both-info {
+	display: flex;
+	align-items: center;
+}
+
+div#home-div div.home-main-divs div.both-info span#percentage {
+	font-weight: bold;
+	text-shadow: 0px 5px rgba(0, 0, 0, .25);
+	color: #e47536;
+}
+
+div#home-div div.home-main-divs div#discount-div p {
+	margin: 0;
+	font-size: 2rem;
+	line-height: 30px;
+	text-align: right;
+}
+
+div#home-div div.div-images {
+	position: relative;
+	align-items: flex-end;
+	height: calc(100vh - 100px);
+}
+
+div#home-div div.div-images svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div#home-div div.div-images img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

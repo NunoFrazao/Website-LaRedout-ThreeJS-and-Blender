@@ -1,0 +1,81 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+div#produtos-div {
+	width: 75%;
+}
+
+div#produtos-div h2 {
+	pointer-events: none;
+}
+
+div#produtos-div h2 span#title-span {
+	position: relative;
+}
+
+div#produtos-div h2 span#title-span::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: calc(100% - 55px);
+	height: 2px;
+	border-radius: 5px;
+	background-color: #a11414;
+}
+
+div#produtos-div h2 span#title-in-span {
+	position: relative;
+	color: #a11414;
+}
+
+div#produtos-div h2 span#title-in-span::after {
+	content: "PRODUTOS";
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+	width: 50px;
+	font-size: 0.6rem;
+}
+
+div#produtos-div div.each-product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+}
+
+div#produtos-div div.each-product p.titles {
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	width: 160px;
+	white-space: nowrap;
+}
+
+div#produtos-div div.each-div {
+	width: 96%;
+	height: 98%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .2s ease;
+}
+
+div#produtos-div div.each-div img {
+	pointer-events: none;
+}
+
+/* ------------ ON HOVER ------------ */
+
+div#produtos-div div.each-div:hover {
+	border: 1px solid #a11414;
+}
+
+div#produtos-div div.each-div:hover img {
+	transform: scale(1.05);
+}
